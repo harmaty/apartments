@@ -1,0 +1,17 @@
+table
+  thead
+    tr
+      th Address
+      th Apartment
+      th City
+      th Price
+      th Agency
+  tbody
+    - @apartments.each do |apartment|
+      tr
+        td= apartment.address
+        td= apartment.apartment
+        td= apartment.city
+        td= apartment.price
+        td= apartment.rental_agency
+    
